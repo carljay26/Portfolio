@@ -1,5 +1,10 @@
 // Central place for text/settings you may want to update later.
-
+const portfolioConfig = {
+  typedPhrases: ['IT Professional', 'Software Developer', 'Cloud Engineer', 'Network Specialist'],
+  themeStorageKey: 'portfolio-theme',
+  darkLabel: '☀️ Light',
+  lightLabel: '🌙 Dark'
+};
 
 // ─── TYPED EFFECT ───
 const phrases = portfolioConfig.typedPhrases;
@@ -18,7 +23,24 @@ function type() {
 }
 type();
 
+// ─── THEME TOGGLE ───
+const themeBtn = document.getElementById('themeBtn');
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const resumeBtn = document.getElementById('resumeBtn');
+const sendMessageBtn = document.getElementById('sendMessageBtn');
 
+let light = localStorage.getItem(portfolioConfig.themeStorageKey) === 'light';
+document.body.classList.toggle('light-mode', light);
+themeBtn.textContent = light ? portfolioConfig.lightLabel : portfolioConfig.darkLabel;
+
+function toggleTheme() {
+  light = !light;
+  document.body.classList.toggle('light-mode', light);
+  themeBtn.textContent = light ? portfolioConfig.lightLabel : portfolioConfig.darkLabel;
+  localStorage.setItem(portfolioConfig.themeStorageKey, light ? 'light' : 'dark');
+}
+themeBtn.addEventListener('click', toggleTheme);
 
 // ─── MOBILE MENU ───
 function toggleMenu() {
