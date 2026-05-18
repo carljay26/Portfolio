@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carl Jay Cocamas — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -22,7 +22,6 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <button class="dark-toggle" id="themeBtn" type="button">☀️ Light</button>
     <button class="nav-hamburger" id="menuBtn" type="button" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -36,7 +35,6 @@
   <a href="#skills" data-close-menu="true">Skills</a>
   <a href="#experience" data-close-menu="true">Experience</a>
   <a href="#projects" data-close-menu="true">Projects</a>
-  <a href="#certifications" data-close-menu="true">Certifications</a>
   <a href="#contact" data-close-menu="true">Contact</a>
 </div>
 
@@ -45,32 +43,28 @@
   <div class="hero-content">
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
-      Available for opportunities
+
     </div>
     <h1 class="hero-name">Carl Jay<br><span>Cocamas</span></h1>
     <div class="hero-title">
       <span id="typed-text"></span><span style="color:var(--accent-bright);animation:pulse 1s infinite;">|</span>
     </div>
     <p class="hero-intro">
-      Results-driven IT professional with 3+ years of experience in software development, system administration, and technical support. Passionate about building reliable systems and meaningful digital experiences.
+      Passionate IT developer with experience in web development and mobile application development. Skilled in building responsive systems, maintaining applications, fixing bugs, and creating user-friendly digital solutions. Dedicated to continuous learning and developing reliable technology through hands-on projects and real-world experience.
     </p>
     <div class="hero-btns">
-      <a href="#projects" class="btn-primary">View Portfolio</a>
-      <a href="#" class="btn-outline" id="resumeBtn">⬇ Download Resume</a>
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="./RESUME.pdf" class="btn-outline" download="RESUME.pdf">⬇ Download Resume</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">1</div><div class="stat-lbl">Years Exp.</div></div>
-      <div class="stat"><div class="stat-num">12+</div><div class="stat-lbl">Projects Done</div></div>
-      <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Certifications</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Months Exp.</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Projects Done</div></div>
+      <div class="stat"><div class="stat-num">1</div><div class="stat-lbl">Experience</div></div>
     </div>
   </div>
 
   <div class="hero-visual">
-    <div class="profile-ring">
-      <div class="profile-placeholder">CJC</div>
-      <div class="hero-float float-1">Full-Stack Dev</div>
-      <div class="hero-float float-2">Cloud Certified</div>
-    </div>
+    <img src="./assets/Profile.JPG" alt="Carl Jay Cocamas" class="hero-profile-photo" width="320" height="320">
   </div>
 </section>
 
@@ -81,37 +75,27 @@
   <div class="section-line fade-in"></div>
   <div class="about-grid">
     <div class="about-text fade-in">
-      <p>I'm Juan Dela Cruz, an IT professional based in Davao City, Philippines, with a strong foundation in software development, networking, and cloud infrastructure. I thrive at the intersection of technology and problem-solving.</p>
-      <p>My career goal is to leverage cutting-edge technologies to build scalable, secure, and efficient systems that drive business value. I'm passionate about continuous learning and staying ahead in the ever-evolving tech landscape.</p>
-      <p>When I'm not coding, I contribute to open-source projects, mentor junior developers, and explore new cloud architectures and DevOps practices.</p>
+      <p>Motivated and detail-oriented IT professional seeking to contribute technical skills in web and mobile development, UI/UX design, and system development within a collaborative and innovative environment. Dedicated to continuous learning, delivering quality work, and growing professionally while contributing to organizational success.</p>
       <div class="about-highlight">
         <div class="highlight-icon"></div>
         <div class="highlight-text">
           <strong>Career Goal</strong>
-          <span>To grow as a full-stack engineer and cloud architect, building innovative solutions for complex business challenges.</span>
+          <span>To grow as a full-stack web developer, building innovative solutions for complex business challenges.</span>
         </div>
       </div>
     </div>
     <div class="about-cards fade-in">
       <div class="about-card">
-        <div class="about-card-icon">⚙️</div>
-        <h4>Software Development</h4>
-        <p>Building robust web applications and backend systems using modern frameworks and best practices.</p>
+        <h4>Web Development</h4>
+        <p>Experienced in developing responsive and user-friendly websites with front-end and back-end functionality, including database integration, system maintenance, and bug fixing.</p>
       </div>
       <div class="about-card">
-        <div class="about-card-icon">🌐</div>
-        <h4>Networking & Infrastructure</h4>
-        <p>Designing and maintaining secure network architectures with hands-on Cisco and Linux expertise.</p>
+        <h4>Mobile App Development</h4>
+        <p>Skilled in building mobile applications with responsive interfaces, smooth navigation, and functional features focused on user experience and performance.</p>
       </div>
       <div class="about-card">
-        <div class="about-card-icon">☁️</div>
-        <h4>Cloud Technologies</h4>
-        <p>Deploying and managing cloud workloads on AWS, with a focus on scalability and cost optimization.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">🛠️</div>
-        <h4>Technical Support</h4>
-        <p>Delivering Tier 1–3 IT support, troubleshooting complex hardware and software issues efficiently.</p>
+        <h4>Game Development</h4>
+        <p>Knowledgeable in developing interactive 2D games and educational applications with gameplay mechanics, UI systems, and engaging user interactions using game development tools.</p>
       </div>
     </div>
   </div>
@@ -124,39 +108,41 @@
   <div class="section-line fade-in"></div>
   <div class="skills-grid">
     <div class="skill-group fade-in">
-      <div class="skill-group-title"><span class="skill-group-icon">💻</span>Programming</div>
+      <div class="skill-group-title">Programming</div>
       <div class="skill-tags">
-        <span class="skill-tag">Python</span>
         <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">PHP</span>
         <span class="skill-tag">Dart</span>
         <span class="skill-tag">React</span>
         <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">Python</span>
       </div>
     </div>
     <div class="skill-group fade-in">
-      <div class="skill-group-title"><span class="skill-group-icon">🌐</span>Web Development</div>
+      <div class="skill-group-title">Web Development</div>
       <div class="skill-tags">
-        <span class="skill-tag">React</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">PHP</span>
         <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Tailwind CSS</span>
         <span class="skill-tag">Laravel</span>
         <span class="skill-tag">REST API</span>
       </div>
     </div>
     <div class="skill-group fade-in">
-      <div class="skill-group-title"><span class="skill-group-icon"></span>App Development</div>
+      <div class="skill-group-title">App Development</div>
       <div class="skill-tags">
         <span class="skill-tag">React</span>
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
         <span class="skill-tag">Flutter</span>
         <span class="skill-tag">Unity 3D</span>
       </div>
     </div>
     <div class="skill-group fade-in">
-      <div class="skill-group-title"><span class="skill-group-icon">🗄️</span>Database</div>
+      <div class="skill-group-title">Database</div>
       <div class="skill-tags">
         <span class="skill-tag">MySQL</span>
         <span class="skill-tag">Firebase</span>
@@ -164,16 +150,16 @@
       </div>
     </div>
     <div class="skill-group fade-in">
-      <div class="skill-group-title"><span class="skill-group-icon">🔧</span>Tools & DevOps</div>
+      <div class="skill-group-title">Tools & DevOps</div>
       <div class="skill-tags">
         <span class="skill-tag">Git</span>
         <span class="skill-tag">VS Code</span>
       </div>
     </div>
     <div class="skill-group fade-in">
-      <div class="skill-group-title"><span class="skill-group-icon">📡</span>Networking</div>
+      <div class="skill-group-title">Networking</div>
       <div class="skill-tags">
-        <span class="skill-tag">Cisco IOS</span>
+        <span class="skill-tag">Cisco</span>
       </div>
     </div>
   </div>
@@ -189,34 +175,17 @@
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <div class="timeline-header">
-          <div class="timeline-role">IT Support Specialist</div>
-          <div class="timeline-date">2022 — Present</div>
+          <div class="timeline-role">Full Stack Web Developer Intern</div>
+          <div class="timeline-date">2025 - 2026</div>
         </div>
-        <div class="timeline-company">TechSolutions Inc. · Davao City, Philippines</div>
-        <div class="timeline-desc">Provide comprehensive IT support and infrastructure management for 200+ end users, maintaining 99.5% system uptime and leading digital transformation initiatives.</div>
+        <div class="timeline-company">ManPro -Powered by GAC Infinity Hub Corp.</div>
+        <div class="timeline-desc">Assisted in the development and maintenance of a web-based payroll and HR management system, ensuring smooth functionality, system stability, and an improved user experience for daily operations.</div>
         <ul class="timeline-achievements">
-          <li>Reduced average ticket resolution time by 35% through implementing a tiered support model</li>
-          <li>Deployed and maintained VMware virtualization environment across 12 servers</li>
-          <li>Led migration of on-premise file storage to AWS S3, cutting costs by 40%</li>
-          <li>Developed automated monitoring scripts reducing manual checks by 60%</li>
-          <li>Trained and onboarded 15 new team members on internal systems</li>
-        </ul>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <div class="timeline-role">Junior Web Developer</div>
-          <div class="timeline-date">2021 — 2022</div>
-        </div>
-        <div class="timeline-company">DigiWeb Studios · Davao City, Philippines</div>
-        <div class="timeline-desc">Developed and maintained client web applications using PHP, Laravel, and React, contributing to the delivery of 8+ production projects within tight deadlines.</div>
-        <ul class="timeline-achievements">
-          <li>Built RESTful APIs serving 10,000+ daily active users</li>
-          <li>Implemented responsive UI components improving mobile engagement by 28%</li>
-          <li>Optimized MySQL queries reducing load times by 45%</li>
-          <li>Collaborated in Agile sprints, consistently delivering features on schedule</li>
+          <li>Built and improved both front-end and back-end features of the website</li>
+          <li>Fixed bugs and resolved system issues to ensure smooth website performance</li>
+          <li>Collaborated with the development team to implement new functionalities and enhancements</li>
+          <li>Performed testing, debugging, and maintenance for system stability and usability</li>
+          <li>Helped optimize website responsiveness and user experience</li>
         </ul>
       </div>
     </div>
@@ -230,85 +199,80 @@
   <div class="section-line fade-in"></div>
   <div class="projects-grid">
     <div class="project-card fade-in">
-      <div class="project-banner project-banner-1">📦</div>
-      <div class="project-card-body">
-        <div class="project-card-title">Inventory Management System</div>
-        <div class="project-card-desc">A full-featured inventory tracking system with real-time stock alerts, barcode scanning, multi-warehouse support, and automated purchase order generation.</div>
-        <div class="project-tags">
-          <span class="project-tag">PHP</span>
-          <span class="project-tag">Laravel</span>
-          <span class="project-tag">MySQL</span>
-          <span class="project-tag">React</span>
-          <span class="project-tag">REST API</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">⚡ Live Demo</a>
-          <a href="#" class="project-link">📂 GitHub</a>
-        </div>
+      <div class="project-banner">
+        <img src="./assets/think%27c.jpg" alt="Think'C gamified learning application">
       </div>
-    </div>
-    <div class="project-card fade-in">
-      <div class="project-banner project-banner-2">📅</div>
       <div class="project-card-body">
-        <div class="project-card-title">Appointment Booking System</div>
-        <div class="project-card-desc">A responsive scheduling platform with email/SMS reminders, calendar integration, admin dashboard, and multi-staff availability management.</div>
+        <div class="project-card-title">Think'C: A 2D Gamified Learning Application</div>
+        <div class="project-card-desc">Developed an interactive 2D educational application designed to improve student learning through engaging activities and game-based lessons. Implemented user-friendly interfaces, grade selection features, subject-based navigation, and interactive learning mechanics to enhance the educational experience.</div>
         <div class="project-tags">
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">React</span>
-          <span class="project-tag">MongoDB</span>
-          <span class="project-tag">Twilio</span>
-          <span class="project-tag">AWS</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">⚡ Live Demo</a>
-          <a href="#" class="project-link">📂 GitHub</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card fade-in">
-      <div class="project-banner project-banner-3">📡</div>
-      <div class="project-card-body">
-        <div class="project-card-title">Network Monitoring Tool</div>
-        <div class="project-card-desc">A real-time network monitoring dashboard with SNMP polling, bandwidth visualization, alerting via Slack/email, and historical performance analytics.</div>
-        <div class="project-tags">
+          <span class="project-tag">Flutter</span>
+          <span class="project-tag">Dart</span>
+          <span class="project-tag">SQLite</span>
           <span class="project-tag">Python</span>
-          <span class="project-tag">Flask</span>
-          <span class="project-tag">Chart.js</span>
-          <span class="project-tag">SNMP</span>
-          <span class="project-tag">Redis</span>
+          <span class="project-tag">JavaScript</span>
         </div>
         <div class="project-links">
-          <a href="#" class="project-link">⚡ Live Demo</a>
-          <a href="#" class="project-link">📂 GitHub</a>
+          <a href="#" class="project-link">GitHub</a>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <p class="section-label fade-in">Credentials</p>
-  <h2 class="section-title fade-in">Certifications</h2>
-  <div class="section-line fade-in"></div>
-  <div class="cert-grid">
-    <div class="cert-card fade-in">
-      <div class="cert-icon">🏅</div>
-      <div class="cert-name">CompTIA A+</div>
-      <div class="cert-org">CompTIA</div>
-      <span class="cert-badge">Verified</span>
+    <div class="project-card fade-in">
+      <div class="project-banner">
+        <img src="./assets/ecwholesaler.jpg" alt="EC Wholesaler mobile application">
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-title">EC Wholesaler</div>
+        <div class="project-card-desc">Built a mobile wholesale application using Flutter for managing products, orders, and customer transactions. Developed responsive mobile interfaces and implemented features focused on inventory viewing, order management, and user-friendly mobile navigation.</div>
+        <div class="project-tags">
+          <span class="project-tag">Flutter</span>
+          <span class="project-tag">Dart</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/carljay26/EC_Wholesaler" class="project-link">GitHub</a>
+        </div>
+      </div>
     </div>
-    <div class="cert-card fade-in">
-      <div class="cert-icon">🌐</div>
-      <div class="cert-name">CCNA</div>
-      <div class="cert-org">Cisco Systems</div>
-      <span class="cert-badge">Verified</span>
+    <div class="project-card fade-in">
+      <div class="project-banner">
+        <img src="./assets/manpro.jpg" alt="ManPro HRMS Manual web application">
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-title">ManPro HRMS Manual</div>
+        <div class="project-card-desc">Contributed to the development and maintenance of the ManPro HRMS Manual web application using Laravel. Assisted in implementing features, fixing bugs, maintaining smooth system performance, and supporting the creation of user documentation and manuals.</div>
+        <div class="project-tags">
+          <span class="project-tag">Laravel</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">Tailwind CSS</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">CRUD</span>
+        </div>
+        <div class="project-links">
+          <a href="https://manual.manpromanagement.com/" class="project-link">Live Demo</a>
+        </div>
+      </div>
     </div>
-    <div class="cert-card fade-in">
-      <div class="cert-icon">☁️</div>
-      <div class="cert-name">AWS Cloud Practitioner</div>
-      <div class="cert-org">Amazon Web Services</div>
-      <span class="cert-badge">Verified</span>
+    <div class="project-card fade-in">
+      <div class="project-banner">
+        <img src="./assets/akeira.jpg" alt="Akeira Snack Inn inventory system">
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-title">Akeira Snack Inn</div>
+        <div class="project-card-desc">Built a snack shop management system for inventory, ordering, order queue, history, and reports. Developed responsive interfaces and CRUD features for daily shop operations.</div>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Laravel</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">Tailwind CSS</span>
+          <span class="project-tag">CRUD</span>
+        </div>
+        <div class="project-links">
+          <a href="https://akeirasnackinnsystem-production-815a.up.railway.app/" class="project-link">Live Demo</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -320,48 +284,24 @@
   <div class="section-line fade-in"></div>
   <div class="edu-grid">
     <div class="edu-card fade-in">
-      <div class="edu-icon">🎓</div>
       <div>
-        <div class="edu-degree">BS Information Technology</div>
-        <div class="edu-school">University of Mindanao</div>
-        <div class="edu-year">Graduated 2020 · Davao City, Philippines</div>
+        <div class="edu-degree">Bachelor of Science in Information Technology</div>
+        <div class="edu-school">Assumption College of Davao</div>
+        <div class="edu-year">Graduated 2026 · Davao City, Philippines</div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-  <p class="section-label fade-in">Recognition</p>
-  <h2 class="section-title fade-in">Achievements</h2>
-  <div class="section-line fade-in"></div>
-  <div class="achieve-grid">
-    <div class="achieve-card fade-in">
-      <div class="achieve-icon">🏆</div>
+    <div class="edu-card fade-in">
       <div>
-        <div class="achieve-title">Hackathon Winner</div>
-        <div class="achieve-desc">1st Place — Regional ICT Hackathon 2023. Built a disaster response coordination app in 24 hours, winning among 45 competing teams.</div>
+        <div class="edu-degree">Secondary Education</div>
+        <div class="edu-school">Dr. Santiago Dakudao Sr. National High School</div>
+        <div class="edu-year">Completed 2022 · Junior &amp; Senior High School · Davao City, Philippines</div>
       </div>
     </div>
-    <div class="achieve-card fade-in">
-      <div class="achieve-icon">⭐</div>
+    <div class="edu-card fade-in">
       <div>
-        <div class="achieve-title">Dean's List Honoree</div>
-        <div class="achieve-desc">Consistently placed on the Dean's List for 3 consecutive semesters at the University of Mindanao with GPA above 1.5.</div>
-      </div>
-    </div>
-    <div class="achieve-card fade-in">
-      <div class="achieve-icon">🥈</div>
-      <div>
-        <div class="achieve-title">Best Capstone Project</div>
-        <div class="achieve-desc">Awarded Best Capstone Project for developing an AI-powered student advisory system evaluated by an industry panel.</div>
-      </div>
-    </div>
-    <div class="achieve-card fade-in">
-      <div class="achieve-icon">📣</div>
-      <div>
-        <div class="achieve-title">Tech Talk Speaker</div>
-        <div class="achieve-desc">Invited speaker at UM Tech Summit 2023 — presented on "Cloud-First Infrastructure for SMEs in the Philippines."</div>
+        <div class="edu-degree">Primary Education</div>
+        <div class="edu-school">AFPLC Elementary School</div>
+        <div class="edu-year">Completed 2016 · Elementary · Davao City, Philippines</div>
       </div>
     </div>
   </div>
@@ -370,62 +310,44 @@
 <!-- CONTACT -->
 <section id="contact">
   <p class="section-label fade-in">Get in touch</p>
-  <h2 class="section-title fade-in">Contact</h2>
+  <h2 class="section-title fade-in">Contact</h2>  
   <div class="section-line fade-in"></div>
   <div class="contact-grid">
     <div class="fade-in">
       <div class="contact-info">
-        <a class="contact-item" href="mailto:juan.delacruz@email.com">
-          <div class="contact-icon">📧</div>
-          <div><div class="contact-label">Email</div><div class="contact-value">juan.delacruz@email.com</div></div>
+        <a class="contact-item" href="mailto:carljaycocamas26@gmail.com">
+          <div><div class="contact-label">Email</div><div class="contact-value">carljaycocamas26@gmail.com</div></div>
         </a>
         <a class="contact-item" href="tel:+639123456789">
-          <div class="contact-icon">📱</div>
-          <div><div class="contact-label">Phone</div><div class="contact-value">+63 912 345 6789</div></div>
+
+          <div><div class="contact-label">Phone</div><div class="contact-value">+63 970 091 4375</div></div>
         </a>
         <div class="contact-item" style="cursor:default;">
-          <div class="contact-icon">📍</div>
-          <div><div class="contact-label">Location</div><div class="contact-value">Davao City, Philippines</div></div>
+          <div><div class="contact-label">Location</div><div class="contact-value">Prk.36 Blk.1 Sea Breeze Ilang, Davao City, Davao Del Sur, Philippines</div></div>
         </div>
       </div>
       <div class="social-links">
-        <a href="#" class="social-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <a href="https://github.com/carljay26" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           GitHub
         </a>
-        <a href="#" class="social-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
+        <a href="https://www.facebook.com/carljay.cocamas26" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
         </a>
       </div>
-    </div>
-    <div class="contact-form-col fade-in">
-      <div class="contact-form-title">Send a Message</div>
-      <div class="form-group">
-        <label>Your Name</label>
-        <input type="text" placeholder="e.g. Maria Santos">
-      </div>
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" placeholder="maria@example.com">
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea placeholder="Hi Juan, I'd love to connect about..."></textarea>
-      </div>
-      <button class="form-btn" id="sendMessageBtn" type="button">Send Message →</button>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">JDC.</div>
-  <div class="footer-copy">© 2025 Juan Dela Cruz. All rights reserved.</div>
+  <div class="footer-logo">Portfolio</div>
+  <div class="footer-copy">© 2026 Carl Jay A. Cocamas. All rights reserved.</div>
   <div class="footer-social">
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Email</a>
+    <a href="https://github.com/carljay26" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.facebook.com/carljay.cocamas26" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="mailto:carljaycocamas26@gmail.com">Gmail</a>
   </div>
 </footer>
 

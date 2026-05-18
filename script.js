@@ -1,9 +1,7 @@
 // Central place for text/settings you may want to update later.
 const portfolioConfig = {
-  typedPhrases: ['IT Professional', 'Software Developer', 'Cloud Engineer', 'Network Specialist'],
-  themeStorageKey: 'portfolio-theme',
-  darkLabel: '☀️ Light',
-  lightLabel: '🌙 Dark'
+  typedPhrases: ['Full-Stack Developer', 'Web Developer', 'App Developer', 'Game Developer', 'UI/UX Designer'],
+  email: 'carljaycocamas26@gmail.com'
 };
 
 // ─── TYPED EFFECT ───
@@ -23,26 +21,10 @@ function type() {
 }
 type();
 
-// ─── THEME TOGGLE ───
-const themeBtn = document.getElementById('themeBtn');
+// ─── MOBILE MENU ───
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
-const resumeBtn = document.getElementById('resumeBtn');
-const sendMessageBtn = document.getElementById('sendMessageBtn');
 
-let light = localStorage.getItem(portfolioConfig.themeStorageKey) === 'light';
-document.body.classList.toggle('light-mode', light);
-themeBtn.textContent = light ? portfolioConfig.lightLabel : portfolioConfig.darkLabel;
-
-function toggleTheme() {
-  light = !light;
-  document.body.classList.toggle('light-mode', light);
-  themeBtn.textContent = light ? portfolioConfig.lightLabel : portfolioConfig.darkLabel;
-  localStorage.setItem(portfolioConfig.themeStorageKey, light ? 'light' : 'dark');
-}
-themeBtn.addEventListener('click', toggleTheme);
-
-// ─── MOBILE MENU ───
 function toggleMenu() {
   mobileMenu.classList.toggle('open');
 }
@@ -54,14 +36,44 @@ document.querySelectorAll('[data-close-menu="true"]').forEach((link) => {
   link.addEventListener('click', closeMenu);
 });
 
-resumeBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  alert('Resume download would go here!');
-});
+// ─── COPY EMAIL (footer Gmail) ───
+const copyEmailBtn = document.getElementById('copyEmailBtn');
 
-sendMessageBtn.addEventListener('click', () => {
-  alert('Message sent! (This is a demo)');
-});
+async function copyEmailToClipboard() {
+  const { email } = portfolioConfig;
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(email);
+    return;
+  }
+  const textarea = document.createElement('textarea');
+  textarea.value = email;
+  textarea.setAttribute('readonly', '');
+  textarea.style.position = 'fixed';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+}
+
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', async (event) => {
+    event.preventDefault();
+    const label = copyEmailBtn.textContent;
+    try {
+      await copyEmailToClipboard();
+      copyEmailBtn.textContent = 'Copied!';
+      setTimeout(() => {
+        copyEmailBtn.textContent = label;
+      }, 2000);
+    } catch {
+      copyEmailBtn.textContent = 'Copy failed';
+      setTimeout(() => {
+        copyEmailBtn.textContent = label;
+      }, 2000);
+    }
+  });
+}
 
 // ─── SCROLL ANIMATIONS ───
 const obs = new IntersectionObserver((entries) => {
