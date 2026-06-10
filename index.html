@@ -5,97 +5,118 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carl Jay Cocamas — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
 <!-- Navigation -->
 <nav id="navbar">
-  <a href="#home" class="nav-logo">My Portfolio</a>
+  <a href="#hero" class="nav-logo">CJC · Portfolio</a>
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
+    <li><a href="#hero">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <button class="nav-hamburger" id="menuBtn" type="button" aria-label="Menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <button class="nav-hamburger" id="menuBtn" type="button" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
       </svg>
     </button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#home" data-close-menu="true">Home</a>
+  <a href="#hero" data-close-menu="true">Home</a>
   <a href="#about" data-close-menu="true">About</a>
   <a href="#skills" data-close-menu="true">Skills</a>
   <a href="#experience" data-close-menu="true">Experience</a>
   <a href="#projects" data-close-menu="true">Projects</a>
+  <a href="#education" data-close-menu="true">Education</a>
   <a href="#contact" data-close-menu="true">Contact</a>
 </div>
 
 <!-- HERO -->
-<section id="home">
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="hero-badge-dot"></span>
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-number" aria-hidden="true">01</div>
 
+  <div class="hero-main">
+    <div class="hero-badge fade-in">IT Developer · Davao City, Philippines</div>
+    <h1 class="hero-name fade-in" style="transition-delay:0.1s">
+      Carl Jay<br><span>Cocamas</span>
+    </h1>
+    <div class="hero-title fade-in" style="transition-delay:0.15s">
+      <span id="typed-text"></span><span class="hero-cursor">|</span>
     </div>
-    <h1 class="hero-name">Carl Jay<br><span>Cocamas</span></h1>
-    <div class="hero-title">
-      <span id="typed-text"></span><span style="color:var(--accent-bright);animation:pulse 1s infinite;">|</span>
-    </div>
-    <p class="hero-intro">
+    <p class="hero-intro fade-in" style="transition-delay:0.2s">
       Passionate IT developer with experience in web development and mobile application development. Skilled in building responsive systems, maintaining applications, fixing bugs, and creating user-friendly digital solutions. Dedicated to continuous learning and developing reliable technology through hands-on projects and real-world experience.
     </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="./RESUME.pdf" class="btn-outline" download="RESUME.pdf">⬇ Download Resume</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Months Exp.</div></div>
-      <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Projects Done</div></div>
-      <div class="stat"><div class="stat-num">1</div><div class="stat-lbl">Experience</div></div>
+    <div class="hero-cta fade-in" style="transition-delay:0.3s">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="./RESUME.pdf" class="btn btn-ghost" download="RESUME.pdf">↓ Download Resume</a>
     </div>
   </div>
 
-  <div class="hero-visual">
-    <img src="./assets/Profile.JPG" alt="Carl Jay Cocamas" class="hero-profile-photo" width="320" height="320">
+  <div class="hero-stats fade-in" style="transition-delay:0.4s">
+    <div class="stat-item">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Months Exp.</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Projects Done</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">1</div>
+      <div class="stat-label">Experience</div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <p class="section-label fade-in">Get to know me</p>
-  <h2 class="section-title fade-in">About Me</h2>
-  <div class="section-line fade-in"></div>
+  <div class="section-header fade-in">
+    <div>
+      <div class="section-label">Get to know me</div>
+      <h2 class="section-title">About Me</h2>
+    </div>
+  </div>
+
   <div class="about-grid">
     <div class="about-text fade-in">
-      <p>Motivated and detail-oriented IT professional seeking to contribute technical skills in web and mobile development, UI/UX design, and system development within a collaborative and innovative environment. Dedicated to continuous learning, delivering quality work, and growing professionally while contributing to organizational success.</p>
-      <div class="about-highlight">
-        <div class="highlight-icon"></div>
-        <div class="highlight-text">
-          <strong>Career Goal</strong>
-          <span>To grow as a full-stack web developer, building innovative solutions for complex business challenges.</span>
-        </div>
-      </div>
+      <p class="about-paragraph">
+        Motivated and detail-oriented IT professional seeking to contribute technical skills in web and mobile development, UI/UX design, and system development within a collaborative and innovative environment.
+      </p>
+      <p class="about-paragraph">
+        Dedicated to continuous learning, delivering quality work, and growing professionally while contributing to organizational success.
+      </p>
+      <blockquote class="about-goal">
+        <strong>Career Goal:</strong> To grow as a full-stack web developer, building innovative solutions for complex business challenges.
+      </blockquote>
     </div>
     <div class="about-cards fade-in">
       <div class="about-card">
-        <h4>Web Development</h4>
-        <p>Experienced in developing responsive and user-friendly websites with front-end and back-end functionality, including database integration, system maintenance, and bug fixing.</p>
+        <div class="about-card-title">Web Development</div>
+        <div class="about-card-desc">Experienced in developing responsive and user-friendly websites with front-end and back-end functionality, including database integration, system maintenance, and bug fixing.</div>
       </div>
       <div class="about-card">
-        <h4>Mobile App Development</h4>
-        <p>Skilled in building mobile applications with responsive interfaces, smooth navigation, and functional features focused on user experience and performance.</p>
+        <div class="about-card-title">Mobile App Development</div>
+        <div class="about-card-desc">Skilled in building mobile applications with responsive interfaces, smooth navigation, and functional features focused on user experience and performance.</div>
       </div>
       <div class="about-card">
-        <h4>Game Development</h4>
-        <p>Knowledgeable in developing interactive 2D games and educational applications with gameplay mechanics, UI systems, and engaging user interactions using game development tools.</p>
+        <div class="about-card-title">Game Development</div>
+        <div class="about-card-desc">Knowledgeable in developing interactive 2D games and educational applications with gameplay mechanics, UI systems, and engaging user interactions using game development tools.</div>
       </div>
     </div>
   </div>
@@ -103,12 +124,16 @@
 
 <!-- SKILLS -->
 <section id="skills">
-  <p class="section-label fade-in">What I work with</p>
-  <h2 class="section-title fade-in">Skills</h2>
-  <div class="section-line fade-in"></div>
-  <div class="skills-grid">
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">Programming</div>
+  <div class="section-header fade-in">
+    <div>
+      <div class="section-label">What I work with</div>
+      <h2 class="section-title">Skills</h2>
+    </div>
+  </div>
+
+  <div class="skills-grid fade-in">
+    <div class="skill-category">
+      <div class="skill-cat-title">Programming</div>
       <div class="skill-tags">
         <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">PHP</span>
@@ -120,8 +145,8 @@
         <span class="skill-tag">Python</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">Web Development</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">Web Development</div>
       <div class="skill-tags">
         <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">PHP</span>
@@ -133,45 +158,45 @@
         <span class="skill-tag">REST API</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">App Development</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">App Development</div>
       <div class="skill-tags">
         <span class="skill-tag">React</span>
         <span class="skill-tag">Flutter</span>
         <span class="skill-tag">Unity 3D</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">Database</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">Database</div>
       <div class="skill-tags">
         <span class="skill-tag">MySQL</span>
         <span class="skill-tag">Firebase</span>
         <span class="skill-tag">SQLite</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">Tools & DevOps</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">Tools & DevOps</div>
       <div class="skill-tags">
         <span class="skill-tag">Git</span>
         <span class="skill-tag">GitHub</span>
         <span class="skill-tag">VS Code</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">UI/UX Design</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">UI/UX Design</div>
       <div class="skill-tags">
         <span class="skill-tag">Figma</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">Graphic Design</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">Graphic Design</div>
       <div class="skill-tags">
         <span class="skill-tag">Canva</span>
         <span class="skill-tag">Adobe Photoshop</span>
       </div>
     </div>
-    <div class="skill-group fade-in">
-      <div class="skill-group-title">Networking</div>
+    <div class="skill-category">
+      <div class="skill-cat-title">Networking</div>
       <div class="skill-tags">
         <span class="skill-tag">Cisco</span>
       </div>
@@ -181,110 +206,136 @@
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <p class="section-label fade-in">Work history</p>
-  <h2 class="section-title fade-in">Experience</h2>
-  <div class="section-line fade-in"></div>
-  <div class="timeline fade-in">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <div class="timeline-role">Full Stack Web Developer Intern</div>
-          <div class="timeline-date">2025 - 2026</div>
-        </div>
-        <div class="timeline-company">ManPro -Powered by GAC Infinity Hub Corp.</div>
-        <div class="timeline-desc">Assisted in the development and maintenance of a web-based payroll and HR management system, ensuring smooth functionality, system stability, and an improved user experience for daily operations.</div>
-        <ul class="timeline-achievements">
-          <li>Built and improved both front-end and back-end features of the website</li>
-          <li>Fixed bugs and resolved system issues to ensure smooth website performance</li>
-          <li>Collaborated with the development team to implement new functionalities and enhancements</li>
-          <li>Performed testing, debugging, and maintenance for system stability and usability</li>
-          <li>Helped optimize website responsiveness and user experience</li>
-        </ul>
-      </div>
+  <div class="section-header fade-in">
+    <div>
+      <div class="section-label">Work history</div>
+      <h2 class="section-title">Experience</h2>
+    </div>
+  </div>
+
+  <div class="exp-item fade-in">
+    <div class="exp-meta">
+      <div class="exp-date">2025 — 2026</div>
+      <div class="exp-company">ManPro — Powered by<br>GAC Infinity Hub Corp.</div>
+    </div>
+    <div class="exp-content">
+      <div class="exp-role">Full Stack Web Developer Intern</div>
+      <p class="exp-desc">
+        Assisted in the development and maintenance of a web-based payroll and HR management system, ensuring smooth functionality, system stability, and an improved user experience for daily operations.
+      </p>
+      <ul class="exp-bullets">
+        <li>Built and improved both front-end and back-end features of the website</li>
+        <li>Fixed bugs and resolved system issues to ensure smooth website performance</li>
+        <li>Collaborated with the development team to implement new functionalities and enhancements</li>
+        <li>Performed testing, debugging, and maintenance for system stability and usability</li>
+        <li>Helped optimize website responsiveness and user experience</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <p class="section-label fade-in">What I've built</p>
-  <h2 class="section-title fade-in">Projects</h2>
-  <div class="section-line fade-in"></div>
+  <div class="section-header fade-in">
+    <div>
+      <div class="section-label">What I've built</div>
+      <h2 class="section-title">Projects</h2>
+    </div>
+  </div>
+
   <div class="projects-grid">
     <div class="project-card fade-in">
       <div class="project-banner">
         <img src="./assets/think%27c.jpg" alt="Think'C gamified learning application">
       </div>
-      <div class="project-card-body">
-        <div class="project-card-title">Think'C: A 2D Gamified Learning Application</div>
-        <div class="project-card-desc">Developed an interactive 2D educational application designed to improve student learning through engaging activities and game-based lessons. Implemented user-friendly interfaces, grade selection features, subject-based navigation, and interactive learning mechanics to enhance the educational experience.</div>
-        <div class="project-tags">
-          <span class="project-tag">Flutter</span>
-          <span class="project-tag">Dart</span>
-          <span class="project-tag">SQLite</span>
-          <span class="project-tag">Python</span>
-          <span class="project-tag">JavaScript</span>
+      <div class="project-card-inner">
+        <div class="project-num" aria-hidden="true">01</div>
+        <div class="project-title">Think'C: A 2D Gamified Learning Application</div>
+        <p class="project-desc">Developed an interactive 2D educational application designed to improve student learning through engaging activities and game-based lessons. Implemented user-friendly interfaces, grade selection features, subject-based navigation, and interactive learning mechanics.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Flutter</span>
+          <span class="stack-tag">Dart</span>
+          <span class="stack-tag">SQLite</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">JavaScript</span>
         </div>
         <div class="project-links">
-          <a href="#" class="project-link">GitHub</a>
+          <a href="#" class="project-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
     </div>
-    <div class="project-card fade-in">
+
+    <div class="project-card fade-in" style="transition-delay:0.1s">
       <div class="project-banner">
         <img src="./assets/ecwholesaler.jpg" alt="EC Wholesaler mobile application">
       </div>
-      <div class="project-card-body">
-        <div class="project-card-title">EC Wholesaler</div>
-        <div class="project-card-desc">Built a mobile wholesale application using Flutter for managing products, orders, and customer transactions. Developed responsive mobile interfaces and implemented features focused on inventory viewing, order management, and user-friendly mobile navigation.</div>
-        <div class="project-tags">
-          <span class="project-tag">Flutter</span>
-          <span class="project-tag">Dart</span>
-          <span class="project-tag">Firebase</span>
-          <span class="project-tag">JavaScript</span>
+      <div class="project-card-inner">
+        <div class="project-num" aria-hidden="true">02</div>
+        <div class="project-title">EC Wholesaler</div>
+        <p class="project-desc">Built a mobile wholesale application using Flutter for managing products, orders, and customer transactions. Developed responsive mobile interfaces and implemented features focused on inventory viewing, order management, and user-friendly mobile navigation.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Flutter</span>
+          <span class="stack-tag">Dart</span>
+          <span class="stack-tag">Firebase</span>
+          <span class="stack-tag">JavaScript</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/carljay26/EC_Wholesaler" class="project-link">GitHub</a>
+          <a href="https://github.com/carljay26/EC_Wholesaler" class="project-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
     </div>
-    <div class="project-card fade-in">
+
+    <div class="project-card fade-in" style="transition-delay:0.15s">
       <div class="project-banner">
         <img src="./assets/manpro.jpg" alt="ManPro HRMS Manual web application">
       </div>
-      <div class="project-card-body">
-        <div class="project-card-title">ManPro HRMS Manual</div>
-        <div class="project-card-desc">Contributed to the development and maintenance of the ManPro HRMS Manual web application using Laravel. Assisted in implementing features, fixing bugs, maintaining smooth system performance, and supporting the creation of user documentation and manuals.</div>
-        <div class="project-tags">
-          <span class="project-tag">Laravel</span>
-          <span class="project-tag">PHP</span>
-          <span class="project-tag">Tailwind CSS</span>
-          <span class="project-tag">MySQL</span>
-          <span class="project-tag">CRUD</span>
+      <div class="project-card-inner">
+        <div class="project-num" aria-hidden="true">03</div>
+        <div class="project-title">ManPro HRMS Manual</div>
+        <p class="project-desc">Contributed to the development and maintenance of the ManPro HRMS Manual web application using Laravel. Assisted in implementing features, fixing bugs, maintaining smooth system performance, and supporting the creation of user documentation and manuals.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Laravel</span>
+          <span class="stack-tag">PHP</span>
+          <span class="stack-tag">Tailwind CSS</span>
+          <span class="stack-tag">MySQL</span>
+          <span class="stack-tag">CRUD</span>
         </div>
         <div class="project-links">
-          <a href="https://manual.manpromanagement.com/" class="project-link">Live Demo</a>
+          <a href="https://manual.manpromanagement.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
         </div>
       </div>
     </div>
-    <div class="project-card fade-in">
+
+    <div class="project-card fade-in" style="transition-delay:0.2s">
       <div class="project-banner">
         <img src="./assets/akeira.jpg" alt="Akeira Snack Inn inventory system">
       </div>
-      <div class="project-card-body">
-        <div class="project-card-title">Akeira Snack Inn</div>
-        <div class="project-card-desc">Built a snack shop management system for inventory, ordering, order queue, history, and reports. Developed responsive interfaces and CRUD features for daily shop operations.</div>
-        <div class="project-tags">
-          <span class="project-tag">JavaScript</span>
-          <span class="project-tag">Laravel</span>
-          <span class="project-tag">PHP</span>
-          <span class="project-tag">MySQL</span>
-          <span class="project-tag">Tailwind CSS</span>
-          <span class="project-tag">CRUD</span>
+      <div class="project-card-inner">
+        <div class="project-num" aria-hidden="true">04</div>
+        <div class="project-title">Akeira Snack Inn</div>
+        <p class="project-desc">Built a snack shop management system for inventory, ordering, order queue, history, and reports. Developed responsive interfaces and CRUD features for daily shop operations.</p>
+        <div class="project-stack">
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">Laravel</span>
+          <span class="stack-tag">PHP</span>
+          <span class="stack-tag">MySQL</span>
+          <span class="stack-tag">Tailwind CSS</span>
+          <span class="stack-tag">CRUD</span>
         </div>
         <div class="project-links">
-          <a href="https://akeirasnackinnsystem-production-815a.up.railway.app/" class="project-link">Live Demo</a>
+          <a href="https://akeirasnackinnsystem-production-815a.up.railway.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
         </div>
       </div>
     </div>
@@ -293,62 +344,68 @@
 
 <!-- EDUCATION -->
 <section id="education">
-  <p class="section-label fade-in">Academic background</p>
-  <h2 class="section-title fade-in">Education</h2>
-  <div class="section-line fade-in"></div>
-  <div class="edu-grid">
-    <div class="edu-card fade-in">
-      <div>
-        <div class="edu-degree">Bachelor of Science in Information Technology</div>
-        <div class="edu-school">Assumption College of Davao</div>
-        <div class="edu-year">Graduated 2026 · Davao City, Philippines</div>
-      </div>
+  <div class="section-header fade-in">
+    <div>
+      <div class="section-label">Academic background</div>
+      <h2 class="section-title">Education</h2>
     </div>
-    <div class="edu-card fade-in">
-      <div>
-        <div class="edu-degree">Secondary Education</div>
-        <div class="edu-school">Dr. Santiago Dakudao Sr. National High School</div>
-        <div class="edu-year">Completed 2022 · Junior &amp; Senior High School · Davao City, Philippines</div>
-      </div>
+  </div>
+
+  <div class="edu-grid fade-in">
+    <div class="edu-card">
+      <div class="edu-level">Tertiary</div>
+      <div class="edu-degree">Bachelor of Science in Information Technology</div>
+      <div class="edu-school">Assumption College of Davao</div>
+      <div class="edu-year">Graduated 2026 · Davao City, Philippines</div>
     </div>
-    <div class="edu-card fade-in">
-      <div>
-        <div class="edu-degree">Primary Education</div>
-        <div class="edu-school">AFPLC Elementary School</div>
-        <div class="edu-year">Completed 2016 · Elementary · Davao City, Philippines</div>
-      </div>
+    <div class="edu-card">
+      <div class="edu-level">Secondary</div>
+      <div class="edu-degree">Secondary Education</div>
+      <div class="edu-school">Dr. Santiago Dakudao Sr. National High School</div>
+      <div class="edu-year">Completed 2022 · Junior &amp; Senior High School · Davao City, Philippines</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-level">Primary</div>
+      <div class="edu-degree">Primary Education</div>
+      <div class="edu-school">AFPLC Elementary School</div>
+      <div class="edu-year">Completed 2016 · Elementary · Davao City, Philippines</div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <p class="section-label fade-in">Get in touch</p>
-  <h2 class="section-title fade-in">Contact</h2>  
-  <div class="section-line fade-in"></div>
-  <div class="contact-grid">
+  <div class="contact-inner">
     <div class="fade-in">
-      <div class="contact-info">
-        <a class="contact-item" href="mailto:carljaycocamas26@gmail.com">
-          <div><div class="contact-label">Email</div><div class="contact-value">carljaycocamas26@gmail.com</div></div>
-        </a>
-        <a class="contact-item" href="tel:+639700914375">
-
-          <div><div class="contact-label">Phone</div><div class="contact-value">+63 970 091 4375</div></div>
-        </a>
-        <div class="contact-item" style="cursor:default;">
-          <div><div class="contact-label">Location</div><div class="contact-value">Prk.36 Blk.1 Sea Breeze Ilang, Davao City, Davao Del Sur, Philippines</div></div>
-        </div>
+      <div class="section-label">Get in touch</div>
+      <h2 class="contact-headline">Let's<br><span>Work</span><br>Together</h2>
+      <p class="contact-subtext">Open to opportunities, collaborations, and conversations about building great software.</p>
+    </div>
+    <div class="contact-info fade-in">
+      <div class="contact-item">
+        <div class="contact-item-label">Email</div>
+        <a href="mailto:carljaycocamas26@gmail.com" class="contact-item-value">carljaycocamas26@gmail.com</a>
       </div>
-      <div class="social-links">
-        <a href="https://github.com/carljay26" class="social-link" target="_blank" rel="noopener noreferrer">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
-        </a>
-        <a href="https://www.facebook.com/carljay.cocamas26" class="social-link" target="_blank" rel="noopener noreferrer">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          Facebook
-        </a>
+      <div class="contact-item">
+        <div class="contact-item-label">Phone</div>
+        <a href="tel:+639700914375" class="contact-item-value">+63 970 091 4375</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">Location</div>
+        <span class="contact-item-value">Prk.36 Blk.1 Sea Breeze Ilang, Davao City, Davao Del Sur, Philippines</span>
+      </div>
+      <div>
+        <div class="contact-item-label" style="margin-bottom:1rem">Connect</div>
+        <div class="contact-socials">
+          <a href="https://github.com/carljay26" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.facebook.com/carljay.cocamas26" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -356,8 +413,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Portfolio</div>
-  <div class="footer-copy">© 2026 Carl Jay A. Cocamas. All rights reserved.</div>
+  <span class="footer-copy">© 2026 Carl Jay A. Cocamas. All rights reserved.</span>
   <div class="footer-social">
     <a href="https://github.com/carljay26" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a href="https://www.facebook.com/carljay.cocamas26" target="_blank" rel="noopener noreferrer">Facebook</a>
